@@ -613,34 +613,23 @@ nav {
 	position: relative;
 	}
 
-.clearly-header {
-	background: url(../images/clearly-header.jpg) center no-repeat;
-	background-size: cover;
-	}
-
-.clearly-air-optix {
-	margin: 150px 0;
-	text-align: center;
-	}
-
-.clearly-dailies {
-	margin: 150px 0 50px;
-	text-align: center;
-	}
-
-.clearly-air-optix img, .clearly-dailies img {
-	padding: 0 15px;
-	}
-
-.vulsini-header {
-	background: url(../images/vulsini-header.jpg) bottom no-repeat;
-	background-size: cover;
-	}
-
 .think-header {
 	background: url(../images/onboarding-bg.svg) bottom no-repeat;
 	background-size: cover;
+	background-color: #34002F;
+	}
+
+.up-header {
+	background: url(../images/up-bg.svg) bottom no-repeat;
+	background-size: cover;
 	background-color: #020047;
+	}
+
+
+.ftsy-header {
+	background: url(../images/ftsy-bg.svg) bottom no-repeat;
+	background-size: cover;
+	background-color: #C6AA74;
 	}
 
 .think-app-overlay {
@@ -654,31 +643,6 @@ nav {
 @media screen and (min-width: 641px) {
 .mobile-bg {
 	height: 500px;
-	}
-
-.clearly-air-optix {
-	background-image: url(../images/air-optix-bg.jpg);
-	background-position: left;
-	background-repeat: no-repeat;
-	background-color: #000;
-	height: 592px;
-	margin: 250px 0;
-	text-align: center;
-	}
-
-.clearly-dailies {
-	background-image: url(../images/dailies-bg.jpg);
-	background-position: right;
-	background-repeat: no-repeat;
-	height: 592px;
-	position: relative;
-	margin: 250px 0 150px;
-	}
-
-.clearly-air-optix img, .clearly-dailies img {
-	position: relative;
-	z-index: 1;
-	top: -82px;
 	}
 }
 
