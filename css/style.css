@@ -90,9 +90,14 @@ h3 {
 	}
 
 .index {
-	background: url(../images/portfolio-bg.svg) no-repeat;
+	background: url(../images/portfolio-bg.svg) no-repeat 0 0;
 	background-size: cover;
 	background-color: #FFF;
+	}
+
+.about-bg {
+	background: url(../images/DSC06315.png) no-repeat;
+	background-size: cover;
 	}
 
 .index .logo h1 {
@@ -436,6 +441,7 @@ a[href*="#"] img:hover {
 	margin: 160px 8% 100px;
 	font-weight: 400;
 	position: absolute;
+	color: #FFF;
 	}
 
 .contact {
