@@ -95,6 +95,10 @@ h3 {
 	background-color: #FFF;
 	}
 
+.index .logo h1 {
+	color: #222;
+	}
+
 .intro-header {
 	font-size: 6.25em;
 	color: #4eb6b0;
@@ -404,6 +408,7 @@ a[href*="#"] img:hover {
 	font-size: 12px;
 	font-weight: 400;
 	margin-left: 4px;
+	color: #FFF;
 	}
 
 .logo:hover {
