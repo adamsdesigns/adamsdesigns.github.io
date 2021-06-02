@@ -1,0 +1,48 @@
+.item li {
+	width: 25%;
+	}
+
+.contact {
+	width: 50%;
+	}
+
+.hero {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://adamjtester.com/wordpress/wp-content/themes/portfolio/images/feature-image.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://adamjtester.com/wordpress/wp-content/themes/portfolio/images/feature-image.jpg', sizingMethod='scale')";
+	}
+	
+.hero-contact {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://adamjtester.com/wordpress/wp-content/themes/portfolio/images/contact-image.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://adamjtester.com/wordpress/wp-content/themes/portfolio/images/contact-image.jpg', sizingMethod='scale')";
+	}
+
+header h1 {
+	font-size: 4em;
+	margin-top: 0;
+	}
+
+header p {
+	display: block;
+	font-size: 1.25em;
+	}
+
+.logo {
+	top: 60px;
+	left: 60px;
+	right: auto;
+	}
+
+nav {
+	left: auto;
+	right: 60px;
+	top: 60px;
+	}
+
+nav li {
+	display: inline;
+	}
+
+.row {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	}

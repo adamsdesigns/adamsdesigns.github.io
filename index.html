@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Tester | Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<link rel="stylesheet" href="css/ie.css">
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/animate.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $("#heroslider").responsiveSlides({
+        manualControls: '#heroslider-pager',
+        speed: 1000,
+        auto: true,
+        nav: true
+      });
+    });
+</script>
+</head>
+
+<body class="index">
+
+    <div class="logo">
+      <a href="index.html"><img src="images/logo-black.png" width="54" height="54"></a>
+      <h1>Adam Tester</h1>
+    </div>
+
+      <nav>
+            <ul>
+            	<li><a href="index.html">Work</a></li>
+            	<li><a href="about.html">About</a></li>
+            </ul>
+      </nav>
+
+      <div id="heroslider-pager">
+          <h2>Projects</h2>
+          <ol>
+                <li><a href="dashboard.html">UP42</a></li>
+                <li><a href="thinkific-app.html">Onboarding</a></li>
+                <li><a href="ftsy.html">FTSY</a></li>
+                <li><a href="coaching.html">Coaching</a></li> 
+          </ol>
+    </div>
+
+      <div class="header-img">
+        <ul class="rslides" id="heroslider">
+            <li style="background-image: url(images/dashboard.jpg); background-position: center;" data-type="background" data-speed="5">
+            </li>
+            <li style="background-image: url(images/onboarding.jpg); background-position: center;" data-type="background" data-speed="5">
+            </li>
+            <li style="background-image: url(images/ftsy.jpg); background-position: center;" data-type="background" data-speed="5">
+            </li>           
+            <li style="background-image: url(images/coaching.jpg); background-position: left;" data-type="background" data-speed="5">
+            </li>
+        </ul>
+      </div>
+
+</body>
+</html>
