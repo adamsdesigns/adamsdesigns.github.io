@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="project-img">
-                        <img src="images/onboarding-banner.jpg">
+                        <img src="images/catalog-banner.jpg">
                     </div>
                 </div>
         </div>
@@ -49,50 +49,88 @@
                 <p class="intro">Helping customers find and purchase 510.1 million km² worth of earth imagery.</p>
                 <p>Satellites are photographing every inch of land on earth, every single day. It’s UP42’s mission to open up access to this data and to help people unlock critical information to better understand the planet.</p>
                 <p>UP42 is a developer platform and marketplace offering a wide range of geospatial data and analytics. A core aspect of the platform is enabling customers to construct workflows that take satellite imagery, apply processing algorithms and extract insights from that data. However, the only way to see available imagery is by executing a ‘test run’ of your workflow and repeating until you find something appropriate. There’s no guarantee the ‘test run’ will return what you’re looking for.</p>
-                <p>Catalog search was created to solve this exact problem. It is a tool that improves the exploration of huge amounts of satellite imagery by allowing users to search and see image results on a map. The MVP of this feature was released to test the market and understand how it could evolve to better help customers. This is where my role on the new “Data Platform” team began.</p>
+                <p>Catalog search was created to solve this problem. It is a tool that improves the exploration of huge amounts of satellite imagery by allowing users to search and see image results on a map. The MVP of this feature was released to test the market and understand how it could evolve to better help customers. This is where my role on the new “Data Platform” team began.</p>
             </div>
         </div>
 
-		<!-- <div class="project-container full">
-			<img src="images/onboarding-flow.svg" style="width: 100%;">
-		</div> -->
+		<div class="project-container full">
+			<img src="images/catalog.png">
+		</div>
 
         <div class="project-container full">
             <div class="project-info">
+                <h2>The problem</h2>
                 <p class="intro">Enable an error free and intuitive ordering experience.</p>
-                <p>Research from watching many users sign up for the platform and take their first steps showed that they didn’t know the most important things they should be doing. A sense of delight and guidance to meaningful accomplishments was missing. I realized this was crucial in maintaining customers and increasing their chance of success with the platform.</p>
-                <p>A key part of onboarding was to effectively communicate the main function of the platform. In this case there were two — creating a course and designing a website. Based on some user tests, we decided to create an interactive onboarding modal upon entering the platform that would incorporate these key functions and get the user to make some basic decisions.</p>
+                <p>Currently UP42s largest customers are using the platform for buying data. The company's biggest purchase to date was for high resolution 'Pleiades' satellite imagery. This highlights how important the ordering experience is for the company's success.</p>
+                <p><strong>Analytics</strong></p>
+                <p>While searching for imagery has been made much easier with catalog search, customers still need to manually copy code parameters of their desired image and configure a workflow to retrieve the images. The following graph shows failures in “job outputs” and “Pleiades data job failures” indicating that this is an extremely error prone way of purchasing images.</p>
+                <img src="images/customer-data-1.png" style="margin: 24px 0 56px;">
+                <p><strong>Customer feedback and user testing</strong></p>
+                <p>UP42 has a small number of committed users who have regular conversations with sales and support. Through these conversations, numerous feedback and requests are received. These requests are ‘triaged’ into Productboard which are then used to help the product teams figure out what problems to focus on.</p>
+                <p>Over the course of developing the feature, we conducted a number of testing sessions with both existing users as well as members of the Geospatial industry. For the first iteration we conducted some sessions and found similar problems to the support requests. Time and time again we heard the same thing:</p>
+                <ul>
+                    <li>"Copying the parameters into a job to buy data is tedious and unintuitive."</li>
+                    <li>"It’s not easy to access and re-use purchased data."</li>
+                    <li>"It’s not clear how much I’m spending."</li>
+                </ul>
+                <p>Based on this initial feedback, we had plenty of insights into the core problems we should be focusing on. Further customer research calls were done for the second iteration.</p>
+                <p><strong>For the first iteration, I focused on the following things:</strong></p>
+                    <ul>
+                        <li>New ordering and checkout flow to purchase data.</li>
+                        <li>Data Storage.</li>
+                    </ul>
             </div>
         </div>
 
-
         <div id="owl-demo" class="owl-carousel">
-            <div class="item"><img src="images/onboarding-1.png" alt="Owl Image"></div>
-            <div class="item"><img src="images/onboarding-course-1.jpg" alt="Owl Image"></div>
-            <div class="item"><img src="images/onboarding-course-2.jpg" alt="Owl Image"></div>
-            <div class="item"><img src="images/onboarding-course-3.jpg" alt="Owl Image"></div>
-            <div class="item"><img src="images/onboarding-style-1.jpg" alt="Owl Image"></div>
-            <div class="item"><img src="images/onboarding-style-2.jpg" alt="Owl Image"></div>
-            <div class="item"><img src="images/onboarding-style-3.jpg" alt="Owl Image"></div>
-            <div class="item"><img src="images/onboarding-style-4.jpg" alt="Owl Image"></div>
+            <div class="item"><img src="images/catalog.png" alt="Owl Image"></div>
+            <div class="item"><img src="images/catalog-filters.png" alt="Owl Image"></div>
+            <div class="item"><img src="images/catalog-product-configuration.png" alt="Owl Image"></div>
+            <div class="item"><img src="images/catalog-add-to-cart.png" alt="Owl Image"></div>
+            <div class="item"><img src="images/catalog-order-summary.png" alt="Owl Image"></div>
+        </div>
+
+        <div class="project-container full">
+            <div class="project-info">
+                <h2>Iterating</h2>
+                <p class="intro">Second Iteration</p>
+                <p>Customers now had the ability to easily order and download satellite data, however using that data for insights (with UP42s library of processing algorithms) was not integrated well. Catalog search lacked a user friendly way to analyze the data using “workflows”, a core part of the product offering and a major business goal.</p>
+                <p>Based on some further customer feedback and research calls we also found the following:</p>
+                <ul>
+                    <li>Not a clear enough mechanism that an order is being placed.</li>
+                    <li>The amount being spent still isn’t clear enough.</li>
+                    <li>Understanding the differences and capabilities of different data products is difficult.</li>
+                    <li>Finding specific items in storage isn’t easy.</li>
+                </ul>
+                <p>With these problems in mind, we decided to work on the following features:</p>
+                <ul>
+                    <li>Configuring “Jobs” a.k.a triggering data analysis straight from catalog search.</li>
+                    <li>Checkout improvements.</li>
+                    <li>Storage improvements.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="owl-demo-2" class="owl-carousel">
+            <div class="item"><img src="images/catalog-configure-job.png" alt="Owl Image"></div>
+            <div class="item"><img src="images/storage.png" alt="Owl Image"></div>
         </div>
 
         <div class="project-container full">
             <div class="project-info" style="padding-bottom: 0;">
-                <p class="intro">Provide sense of achievement and encourage next steps.</p> 
-                <p>User research and tests showed us that people wanted guidance upon entering the platform. Tasks were introduced to provide a sense of accomplishment and guide the user to important next steps.</p>
-                <img src="images/dashboard-tasks.jpg" class="mobile-mockup">
-                <p style="margin-top: 60px;">After a couple of months watching users interact with the new onboarding flow, a second iteration was designed. Based on further research and user tests, improvements were made to the user flow and a “choose your own path” style of onboarding was implemented.</p>
+                <h2>Outcomes</h2>
+                <p class="intro">The proof is in the numbers</p> 
+                <p>After the initial release of ordering we saw a continuous increase in it’s usage. This included orders from the company’s main customers.</p>
+                <ul>
+                    <li>Number of orders increased over time, and core customers adopted the feature. To date, 350k of revenue has been made.</li>
+                    <li>Reduction in job parameter copies.</li>
+                </ul>
+                <img src="images/ordering-data.png" style="margin: 24px 0 56px;">
             </div>
         </div>
 
-        <div class="project-bg">
-            <div class="project-container">
-                <div class="project-info">
-                    <img src="images/onboarding-mobile.png">
-                </div>
-            </div>
-        </div>
+
 
         <footer>
                 <a class="logo" href="index.html"><img src="images/logo-black.png" width="32" height="32"></a>
@@ -104,7 +142,7 @@
 <script>
 $(document).ready(function() {
  
-  $("#owl-demo").owlCarousel({
+  $("#owl-demo, #owl-demo-2").owlCarousel({
  
       autoPlay: 5000, //Set AutoPlay to 3 seconds
       items : 2,
