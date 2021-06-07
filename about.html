@@ -36,22 +36,5 @@
         </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/animate.js"></script>    
-<script>
-$(window).resize(function () {
-  if (window.innerWidth < 768) {
-    $(".rslides li, .hero-contact").css('backgroundPosition', 'center 0');
-  }
-});
-
-$(window).scroll(function() {
-  if (window.innerWidth > 768) {
-    $bgobj = $('[data-type="background"]');
-    var yPos = -($(window).scrollTop() / $bgobj.data('speed'));
-    var coords = '50% '+ yPos + 'px';
-    $bgobj.css({ backgroundPosition: coords });
-  }
-});
-</script>
 </body>
 </html>
