@@ -445,6 +445,10 @@ a[href*="#"] img:hover {
 	color: #FFF;
 	}
 
+.about p {
+	opacity: 0.9;
+	}
+
 .contact {
 	margin: 160px 8% 0;
 	font-weight: 400;
