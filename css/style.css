@@ -89,6 +89,15 @@ h3 {
 	font-size: 1.3125em;
 	}
 
+.caption {
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+    opacity: 0.7;
+	}
+
 .index {
 	background: url(../images/portfolio-bg.svg) no-repeat 0 0;
 	background-size: cover;
@@ -863,31 +872,3 @@ video {
  	background-size: 30px;
 	}
  }
-
-/* Contact Form */
-
-.wpcf7 input.wpcf7-text, .wpcf7 textarea.wpcf7-textarea {
-	width: 90%;
-	border: 2px solid #E9E9E9;
-	}
-
-.wpcf7 input[type="submit"] {
-	background: #E9E9E9;
-	display: inline-block;
-	padding: 0.625em 1.25em;
-	border: 0;
-	font: inherit;
-	}
-
-.wpcf7 input[type="submit"]:hover {
-	background: #D1D1D1;
-	color: #222;
-	transition: all 0.2s ease-in-out 0s;
-	-moz-transition: all 0.2s ease-in-out 0s; 
-	-webkit-transition: all 0.2s ease-in-out 0s;
-	cursor: pointer;
-	}
-
-.wpcf7 textarea.wpcf7-textarea {
-	resize: none;
-	}
