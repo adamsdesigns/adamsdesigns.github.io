@@ -573,7 +573,7 @@ nav {
 	top: 30px;
 	right: 15px;
 	z-index: 3;
-	font-size: 12px;
+	font-size: 14px;
 	}
 	
 nav ul {
@@ -590,6 +590,10 @@ nav a {
 	padding: 15px;
 	color: #011118;
 	font-weight: 400;
+	}
+
+.about-bg nav a {
+	color: #FFF;
 	}
 	
 @media screen and (min-width: 35em) {
@@ -610,6 +614,10 @@ nav {
 nav {
 	right: 8%;
 	top: 35px;
+	}
+
+.about-bg nav a {
+	color: #011118;
 	}
 }
 
