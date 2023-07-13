@@ -9,13 +9,13 @@ html, body {
 	}
 
 body {
-	font: 100% 'Poppins', Helvetica, Arial, sans-serif;
-	color: #222222;
+	font: 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #020202;
 	line-height: 1;
 	margin: 0;
 	padding: 0;
 	background: #FFF;
-	font-weight: 300;
+	font-weight: 400;
 	}
 	
 img {
@@ -37,32 +37,32 @@ article, aside, footer, header, nav, section {
 /* Type */
 
 @font-face {
-	font-family:"Metropolis"; 
-	src: url(../type/Metropolis-Thin.otf);
+	font-family:"Helvetica Neue"; 
+	src: url(../type/helvetica-neue/HelveticaNeue-Thin.otf);
 	font-weight: 300;
 	}
 
 @font-face {
-	font-family:"Metropolis"; 
-	src: url(../type/Metropolis-Regular.otf);
+	font-family:"Helvetica Neue"; 
+	src: url(../type/helvetica-neue/HelveticaNeue-Light.otf);
 	font-weight: 400;
 	}
 
 @font-face {
-	font-family:"Metropolis"; 
-	src: url(../type/Metropolis-Medium.otf);
+	font-family:"Helvetica Neue"; 
+	src: url(../type/helvetica-neue/HelveticaNeue-Regular.otf);
 	font-weight: 500;
 	}
 
 @font-face {
-	font-family:"Metropolis"; 
-	src: url(../type/Metropolis-Bold.otf);
+	font-family:"Helvetica Neue"; 
+	src: url(../type/helvetica-neue/HelveticaNeueBold.ttf);
 	font-weight: 600;
 	}
 
 p {
 	margin-bottom: 1.25em;
-	font-size: 1.125em;
+	font-size: 1.25em;
 	line-height: 1.75;
 	max-width: 650px;
 	opacity: 0.8;
@@ -81,8 +81,15 @@ h1, h2 {
 
 h1 {
 	margin-bottom: 0.75em;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 60px;
+	}
+
+h2 {
+	margin-bottom: 0.75em;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.3;
 	}
 
 h3 {
@@ -98,19 +105,25 @@ h3 {
     opacity: 0.7;
 	}
 
+.overline {
+	font-size: 12px;
+	margin-bottom: 32px;
+	text-transform: uppercase;
+	color: #011118;
+	font-weight: 400;
+	display: none;
+	}
+
+.intro-large {
+	font-size: 36px;
+	line-height: 1.3;
+	font-weight: 400;
+	}
+
 .index {
 	background: url(../images/portfolio-bg.svg) no-repeat 0 0;
 	background-size: cover;
 	background-color: #FFF;
-	}
-
-.about-bg {
-	background: url(../images/DSC06315.png) no-repeat;
-	background-size: cover;
-	}
-
-.index .logo h1 {
-	color: #222;
 	}
 
 .intro-header {
@@ -177,7 +190,7 @@ h3 {
 	margin: 0 auto;
 	}
 
-.about h1:after, .project-intro h1:after {
+.project-intro h1:after {
 	margin: initial;
 	}
 
@@ -216,6 +229,20 @@ h3 {
     bottom: -3px;
 	}
 
+.contact h2 {
+	font-size: 60px;
+	line-height: 1.2;
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	}
+
+.contact ul {
+	border-top: 1px solid #444444; 
+	border-bottom: 1px solid #444444; 
+	padding: 24px 0; 
+	margin-bottom: 40px;
+	}
+
 @media screen and (min-width: 641px) {
 .intro-header {
 	line-height: 0.6;
@@ -229,6 +256,17 @@ h3 {
 }
 
 @media screen and (min-width: 1025px) {
+
+.overline {
+	display: block;
+	}
+
+.intro-large {
+	font-size: 52px;
+	line-height: 1.3;
+	font-weight: 400;
+	}
+
 .intro-header {
 	top: 30%;
 	left: 12%;
@@ -362,12 +400,12 @@ a[href*="#"] img:hover {
 	}
 
 .button {
-	margin-bottom: 1.25em;
-	background: #4eb6b0;
+	background: #222;
 	color: #FFF;
 	display: inline-block;
-	padding: 1.25em;
-	border-radius: 4px;
+	padding: 1em;
+	border-radius: 32px;
+	font-size: 15px;
 	}
 	
 .button:hover {
@@ -375,6 +413,44 @@ a[href*="#"] img:hover {
 	}
 	
 /* Layout */
+
+.flex-container {
+	padding: 32px;
+	flex-direction:column;
+	display: flex;
+	}
+
+.flex-child {
+	border-radius: 16px;
+	background: #f2f2f2;
+	overflow: hidden;
+	flex: 1;
+	}
+
+.flex-child:first-child {
+    margin-bottom: 32px;
+	} 
+
+.flex-child.contact {
+	background-color: #0B0E12;
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	}
+
+.contents {
+	padding: 40px 48px 48px;
+	}
+
+.contents h1 {
+	margin-bottom: 48px;
+	margin-top: 48px;
+	}
+
+.contents h1 span {
+	color: #62BEB9;
+	display: block;
+	}
 
 .row {
 	margin: 0 auto;
@@ -409,7 +485,7 @@ a[href*="#"] img:hover {
 
 .header-img {
 	width: 100%;
-	height: 75%;
+	height: 656px;
 	}
 	
 .logo img {
@@ -446,20 +522,12 @@ a[href*="#"] img:hover {
 	}
 
 .about {
-	max-width: 600px;
-	margin: 160px 8% 100px;
-	position: absolute;
-	color: #FFF;
+	margin: 60px 80px 72px 80px;
 	}
 
-.about p {
-	opacity: 1;
-	}
 
-.contact {
-	margin: 160px 8% 0;
-	font-weight: 400;
-	position: absolute;
+.home-intro span, .about span {
+	color: #4EB6B0;
 	}
 
 footer {
@@ -488,17 +556,16 @@ footer .logo {
 	display: block;
 	}
 
+.links > * {
+    vertical-align:middle;  // Align children to middle of line
+}
+
+.links a {
+	display: inline-block;
+	margin-right: 8px;
+	}
+
 @media screen and (min-width: 641px) {
-.about {
-	margin: 220px 8% 200px;
-	}
-
-.contact {
-	margin: 180px 8% 0;
-	width: 50%;
-	max-width: 600px;
-	}
-
 footer {
   	margin: 80px 0;
   	padding-bottom: 80px;
@@ -523,6 +590,33 @@ footer .logo {
 }
 
 @media screen and (min-width: 1025px) {
+.flex-container {
+	display: flex;
+	position: relative;
+	height: 720px;
+	height: 100%;
+	flex-direction:row;
+	}
+
+.flex-child {
+	flex: 1;
+	flex-direction: column;
+	overflow: hidden;
+	}
+
+.flex-child:first-child {
+    margin-right: 32px;
+    margin-bottom: 0;
+	} 
+
+.flex-child img {
+	border-radius: 16px;
+	}
+
+.about {
+	margin: 120px 80px 152px 80px;
+	}
+	
 .logo{
 	top: 40px;
 	}
@@ -535,15 +629,7 @@ footer .logo {
 	}
 
 .header-img {
-	width: 70%;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	height: 82%;
-	}
-
-.logo {
-	left: 8%;
+	height: 100%;
 	}
 
 footer .row {
@@ -553,6 +639,10 @@ footer .row {
 .project-header .row {
 	position: relative;
 	height: 650px;
+	}
+
+.about p {
+	max-width: 70%;
 	}
 }	
 
@@ -591,10 +681,6 @@ nav a {
 	color: #011118;
 	font-weight: 400;
 	}
-
-.about-bg nav a {
-	color: #FFF;
-	}
 	
 @media screen and (min-width: 35em) {
 nav {
@@ -614,10 +700,6 @@ nav {
 nav {
 	right: 8%;
 	top: 35px;
-	}
-
-.about-bg nav a {
-	color: #011118;
 	}
 }
 
@@ -721,11 +803,26 @@ video {
 	top: 0;
 	background-size: cover;
 	height: 100%;
+	border-radius: 16px;
+	color: #fff;
+ 	}
+
+ .rslides li h3 {
+ 	font-weight: 500;
+ 	margin: 40px 0 0 40px;
+ 	font-size: 20px;
+ 	}
+
+ .rslides li p {
+ 	font-weight: 300;
+ 	font-size: 20px;
+ 	margin-left: 40px;
  	}
 
   .rslides_nav {
 	z-index: 1000;
-	bottom: 32px;
+	bottom: 64px;
+	left: 32px;
 	}
 
  .rslides_nav:hover {
@@ -733,23 +830,24 @@ video {
  	}
 
  .rslides_nav.prev {
- 	position: absolute;
- 	left: 30px;
- 	background: url(../images/left-arrow.png) no-repeat;
- 	background-size: 30px;
- 	width: 30px;
- 	height: 30px;
+ 	position: relative;
+ 	background: url(../images/icon-left_arrow.svg) no-repeat;
+ 	background-size: 40px;
+ 	width: 40px;
+ 	height: 40px;
  	color: transparent;
+	display: inline-block;
+	margin-right: 8px;
 	}
 
  .rslides_nav.next {
- 	position: absolute;
- 	left: 80px;
- 	background: url(../images/right-arrow.png) no-repeat;
- 	background-size: 30px;
- 	width: 30px;
- 	height: 30px;
+ 	position: relative;
+ 	background: url(../images/icon-right_arrow.svg) no-repeat;
+ 	background-size: 40px;
+ 	width: 40px;
+ 	height: 40px;
  	color: transparent;
+ 	display: inline-block;
 	}
 
 .rslides li:first-child {
@@ -759,11 +857,13 @@ video {
 	}
 
 .rslides img {
-	display: block;
-	height: auto;
-	float: left;
-	width: 100%;
-	border: 0;
+	position: absolute;
+	right: 48px;
+	top: 40px;
+ 	}
+
+ .rslides img:hover {
+ 	opacity: 0.5;
  	}
 
 #heroslider {
@@ -776,13 +876,12 @@ video {
 
 .rslides_tabs {
 	padding: 0;
-	position: absolute;
 	bottom: 40px;
 	left: 30px;
 	z-index: 100;
 	text-align: left;
 	font-weight: 500;
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 	padding-bottom: 10px;
 	}
 
@@ -798,7 +897,7 @@ video {
 	background: transparent;
 	color: #011118;
 	display: none;
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: 200;
 	opacity: 0.3;
 	}
@@ -813,26 +912,18 @@ video {
 	color: #011118;
 	display: block;
 	opacity: 1;
-	font-weight: 600;
+	font-weight: 500;
 	border-bottom: 9px solid #A7DBD8;
 	transition: none;
 	}
 
 #heroslider-pager {
 	list-style: none;
+	display: none;
 	}
 
 #heroslider-pager img {
 	float: left;
-	}
-
-#heroslider-pager h2 {
-	font-size: 12px;
-	margin-bottom: 40px;
-	text-transform: uppercase;
-	color: #011118;
-	font-weight: 400;
-	display: none;
 	}
 
 @media screen and (min-width: 1025px) {
@@ -844,23 +935,22 @@ video {
 	top: initial;
 	bottom: 11%;
 	left: 8%;
-	margin: 0;
 	}
 
 .rslides_tabs li {
-	margin-bottom: 36px;
+	margin-bottom: 24px;
 	}
 
 .rslides_tabs a {
 	display: inline-block;
 	}
 
-#heroslider-pager, #heroslider-pager h2 {
+#heroslider-pager {
 	display: block;
 	}
  }
 
- @media screen and (min-width: 1280px) {
+ @media screen and (min-width: 1025px) {
 .rslides_nav.prev {
 	right: 15%;
 	left: initial;
