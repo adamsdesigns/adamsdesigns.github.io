@@ -24,32 +24,25 @@
 
 <body>
 
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.png" width="54" height="54"></a>
-          <h1>Adam Tester</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a style="color: #FFF;" href="index.html#work">Work</a></li>
-                <li><a style="color: #FFF;" href="about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="ftsy-header project-header">
-                <div class="row">
+        <div class="flex-container">
+            <div class="flex-child">
+                <div class="contents">
+                <a href="index.html"><img src="images/logo-black.png" width="48" height="48"></a>
                     <div class="project-intro">
-                        <h1><span>FTSY</span> UX/UI design</h1>
+                        <h1>FTSY <span>UX/UI design</span></h1>
                         <p>As an independent contractor, I worked with an agency to redesign an iOS app that uses AI technology to help people find and purchase the perfect fitting shoes.</p>
+                        <div class="links">
+                            <a class="button" href="#case">Read Case Study</a>
+                        </div>
                     </div>
-
-                    <div class="project-img">
-                        <img src="images/ftsy-banner.jpg">
-                    </div>
-                </div>
+            </div>
+        </div>
+            <div class="flex-child" style="display: flex; justify-content: center;">
+                <img src="images/ftsy-banner.jpg" alt="FTSY">
+            </div>
         </div>
 
-        <div class="project-container full">
+        <div class="project-container full" id="case">
             <div class="project-info">
                 <h2>Introduction</h2>
                 <p class="intro">Redefining the way shoes are purchased online.</p>
@@ -93,8 +86,33 @@
             </div>
         </div>
 
-        <img src="images/ftsy-shopping.jpg" style="width: 100%;">
+        <div class="project-bg" style="margin-top: 0;">
+            <img src="images/ftsy-shopping.jpg" style="width: 100%;">
+        </div>
 
+        <div class="flex-container">
+            <div class="flex-child" style="display: flex; justify-content: center;">
+                <img src="images/adam.jpg" alt="Adam">
+            </div>
+
+            <div class="flex-child contact">
+                <div class="contents">
+                    <h2><span>Let's work together. I specialize in:</h2>
+                    <ul>
+                        <li>Research</li>
+                        <li>UI/UX Design</li>
+                        <li>Prototyping</li>
+                        <li>Design Systems</li>
+                        <li>Visual Design & Branding</li>
+                    </ul>
+
+                    <div class="links">
+                        <a class="icon" href="https://dribbble.com/adaaam" target="_blank"><img src="images/icon-dribbble.svg" width="48" height="48"></a>
+                        <a class="icon" href="https://www.linkedin.com/in/adam-tester-50ab0ba7/" target="_blank"><img src="images/icon-linkedin.svg" width="48" height="48"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer>
                 <a class="logo" href="index.html"><img src="images/logo-black.png" width="32" height="32"></a>

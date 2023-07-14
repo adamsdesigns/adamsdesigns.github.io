@@ -24,32 +24,25 @@
 
 <body>
 
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.png" width="54" height="54"></a>
-          <h1>Adam Tester</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a style="color: #FFF;" href="index.html#work">Work</a></li>
-                <li><a style="color: #FFF;" href="about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="think-header project-header">
-                <div class="row">
+        <div class="flex-container">
+            <div class="flex-child">
+                <div class="contents">
+                <a href="index.html"><img src="images/logo-black.png" width="48" height="48"></a>
                     <div class="project-intro">
-                        <h1><span>Thinkific</span> UX/UI design</h1>
+                        <h1>Thinkific <span>UX/UI design</span></h1>
                         <p>Working as in-house product designer, I designed the user onboarding experience of Thinkific, a SaaS platform used to create and sell online courses.</p>
+                        <div class="links">
+                            <a class="button" href="#case">Read Case Study</a>
+                        </div>
                     </div>
-
-                    <div class="project-img">
-                        <img src="images/onboarding-banner.jpg">
-                    </div>
-                </div>
+            </div>
+        </div>
+            <div class="flex-child" style="display: flex; justify-content: center;">
+                <img src="images/onboarding-banner.jpg" alt="Thinkific">
+            </div>
         </div>
 
-        <div class="project-container full">
+        <div class="project-container full" id="case">
             <div class="project-info">
                 <h2>The brief</h2>
                 <p class="intro">Create an onboarding experience for new users signing up to the platform.</p>
@@ -94,6 +87,30 @@
             <div class="project-container">
                 <div class="project-info">
                     <img src="images/onboarding-mobile.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-child" style="display: flex; justify-content: center;">
+                <img src="images/adam.jpg" alt="Adam">
+            </div>
+
+            <div class="flex-child contact">
+                <div class="contents">
+                    <h2><span>Let's work together. I specialize in:</h2>
+                    <ul>
+                        <li>Research</li>
+                        <li>UI/UX Design</li>
+                        <li>Prototyping</li>
+                        <li>Design Systems</li>
+                        <li>Visual Design & Branding</li>
+                    </ul>
+
+                    <div class="links">
+                        <a class="icon" href="https://dribbble.com/adaaam" target="_blank"><img src="images/icon-dribbble.svg" width="48" height="48"></a>
+                        <a class="icon" href="https://www.linkedin.com/in/adam-tester-50ab0ba7/" target="_blank"><img src="images/icon-linkedin.svg" width="48" height="48"></a>
+                    </div>
                 </div>
             </div>
         </div>
