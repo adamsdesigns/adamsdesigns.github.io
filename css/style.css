@@ -353,6 +353,10 @@ h3 {
 }
 
 @media screen and (min-width: 1920px) {
+h1 {
+	font-size: 84px;
+	}
+	
 .intro-header {
 	font-size: 18.125em;
 	}
@@ -450,7 +454,6 @@ a[href*="#"] img:hover {
 	background-color: #0B0E12;
 	color: #FFF;
 	display: flex;
-	justify-content: center;
 	}
 
 .contents {
@@ -627,6 +630,10 @@ footer .logo {
 
 .flex-child img {
 	border-radius: 16px;
+	}
+
+.flex-child.contact {
+	justify-content: center;
 	}
 
 .contents {
