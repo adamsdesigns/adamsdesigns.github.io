@@ -159,38 +159,12 @@ h3 {
 	color: #4eb6b0;
 	}
 
-.project-intro {
-	margin: 180px auto 24px;
-	padding: 0 1.875em 40px;
-	color: #FFF;
-	float: left;
-	width: 100%;
-	text-align: center;
-	}
-
-.project-intro h1 {
-	font-size: 20px;
-	margin-bottom: 56px;
+.project-intro h1 span {
+	font-size: 18px;
+	margin-bottom: 48px;
+	margin-top: 16px;
 	position: relative;
 	font-weight: 500;
-	}
-
-.project-intro h1 span {
-	display: block;
-	font-weight: 600;
-	line-height: 1;
-	margin-bottom: 15px;
-	font-size: 2.5em;
-	}
-
-.project-intro p {
-	font-size: 20px;
-	max-width: 550px;
-	margin: 0 auto;
-	}
-
-.project-intro h1:after {
-	margin: initial;
 	}
 
 .project-info {
@@ -290,21 +264,6 @@ h3 {
 
 .intro-header a:after {
 	background-color: #222;
-	}
-
-.project-intro {
-	width: 50%;
-	text-align: left;
-	padding-left: 8%;
-	margin: 270px auto 0;
-	}
-
-.project-intro h1 span {
-	font-size: 3.75rem;
-	}
-
-.project-intro p {
-	margin: initial;
 	}
 
 .project-info {
