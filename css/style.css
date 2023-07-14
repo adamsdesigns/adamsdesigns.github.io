@@ -229,7 +229,7 @@ h3 {
 	}
 
 .contact h2 {
-	font-size: 60px;
+	font-size: 40px;
 	line-height: 1.2;
 	font-weight: 400;
 	margin-bottom: 0.5em;
@@ -340,6 +340,11 @@ h3 {
 
 .project-img img {
 	width: 100%;
+	}
+
+.contact h2 {
+	font-size: 60px;
+	line-height: 1;
 	}
 
 .link {
