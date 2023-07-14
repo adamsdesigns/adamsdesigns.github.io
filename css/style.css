@@ -356,7 +356,7 @@ h3 {
 h1 {
 	font-size: 84px;
 	}
-	
+
 .intro-header {
 	font-size: 18.125em;
 	}
@@ -612,7 +612,7 @@ footer .logo {
 	padding: 32px;
 	display: flex;
 	position: relative;
-	height: 720px;
+	min-height: 720px;
 	height: 100%;
 	flex-direction:row;
 	}
