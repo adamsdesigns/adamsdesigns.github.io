@@ -244,7 +244,7 @@ h3 {
 
 .link {
 	display: block;
-	margin-left: 40px;
+	margin-left: 32px;
 	color: #FFF;
 	font-weight: 600;
 	font-size: 14px;
@@ -824,14 +824,14 @@ video {
 
  .rslides li h3 {
  	font-weight: 500;
- 	margin: 40px 0 0 40px;
+ 	margin: 40px 0 0 32px;
  	font-size: 20px;
  	}
 
  .rslides li p {
  	font-weight: 300;
  	font-size: 20px;
- 	margin-left: 40px;
+ 	margin-left: 32px;
  	margin-bottom: 8px;
  	}
 
@@ -941,6 +941,14 @@ video {
 	}
 
 @media screen and (min-width: 1025px) {
+ .rslides li h3 {
+ 	margin: 40px 0 0 40px;
+ 	}
+
+ .rslides li p {
+ 	margin-left: 40px;
+ 	}
+
 .rslides_nav {
 	display: none;
 	}
