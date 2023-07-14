@@ -862,9 +862,7 @@ video {
 	}
 
 .rslides img {
-	position: absolute;
-	right: 48px;
-	top: 40px;
+	display: none;
  	}
 
  .rslides img:hover {
@@ -949,6 +947,13 @@ video {
 .rslides_tabs a {
 	display: inline-block;
 	}
+
+.rslides img {
+	position: absolute;
+	right: 48px;
+	top: 40px;
+	display: block;
+ 	}
 
 #heroslider-pager {
 	display: block;
