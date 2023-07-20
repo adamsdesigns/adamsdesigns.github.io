@@ -327,6 +327,10 @@ h1 {
 .intro-header {
 	font-size: 18.125em;
 	}
+
+.flex-container {
+	max-height: 1080px;
+	}
 }
 	
 /* Lists */
