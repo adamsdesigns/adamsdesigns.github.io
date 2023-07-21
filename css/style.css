@@ -61,7 +61,7 @@ article, aside, footer, header, nav, section {
 
 p {
 	margin-bottom: 1.25em;
-	font-size: 1.25em;
+	font-size: 1.125em;
 	line-height: 1.75;
 	max-width: 650px;
 	opacity: 0.8;
@@ -396,10 +396,16 @@ a[href*="#"] img:hover {
 	padding: 1em;
 	border-radius: 32px;
 	font-size: 15px;
+	font-weight: 400;
 	}
 	
 .button:hover {
 	opacity: 0.7;
+	}
+
+.button.light {
+	background: #FFF;
+	color: #222;
 	}
 	
 /* Layout */
