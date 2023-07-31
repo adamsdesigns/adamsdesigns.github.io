@@ -42,6 +42,11 @@
 	cursor: pointer;
 	text-align: center;
 }
+@media screen and (min-width: 1025px) {
+	.owl-carousel .owl-item img{
+		border-radius: 8px;
+	}
+}
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
 	cursor: pointer;
