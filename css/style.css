@@ -62,7 +62,7 @@ article, aside, footer, header, nav, section {
 
 p {
 	margin-bottom: 1.25em;
-	font-size: 1.125em;
+	font-size: 1em;
 	line-height: 1.75;
 	}
 	
@@ -198,6 +198,10 @@ h3 {
 }
 
 @media screen and (min-width: 1025px) {
+p {
+	font-size: 1.125em;
+	}
+
 h2 {
 	font-size: 60px;
 	}
@@ -256,7 +260,7 @@ ul {
 	margin-bottom: 1.25em;
 	list-style-position: inside;
 	line-height: 1.75;
-	font-size: 1.125em;
+	font-size: 1em;
 	}
 
 
@@ -270,6 +274,10 @@ ul {
 	    list-style-type: decimal-leading-zero;
 	    list-style-position: outside;
 	    display: block;
+	}
+
+	ul {
+	font-size: 1.125em;
 	}
 }
 
