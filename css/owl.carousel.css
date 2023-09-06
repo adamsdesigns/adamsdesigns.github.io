@@ -42,6 +42,12 @@
 	cursor: pointer;
 	text-align: center;
 }
+
+.owl-item .item {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
 @media screen and (min-width: 1025px) {
 	.owl-carousel .owl-item img{
 		border-radius: 8px;
