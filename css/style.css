@@ -166,6 +166,38 @@ h3 {
 
 .nav {
 	padding: 24px 24px 0;
+	overflow: auto;
+	}
+
+.nav ul {
+	list-style-type: none;
+  	margin: 8px 0 0;
+  	padding: 0;
+  	display: inline-block;
+	}
+
+.nav ul li {
+	display: inline-block;
+	margin-right: 32px;
+	}
+
+.nav ul li a {
+	color: #020202;
+	}
+
+.nav ul li a:hover {
+	opacity: 0.5;
+	}
+
+.nav img {
+	float: left;
+	margin-right: 32px;
+	}
+
+.home .nav {
+	padding: 0;
+	position: absolute;
+	top: 24px;
 	}
 
 @media screen and (min-width: 1025px) {
@@ -195,6 +227,10 @@ h3 {
 
 .nav {
 	padding: 24px 72px 0;
+	}
+
+.home .nav {
+	top: 0;
 	}
 }
 
@@ -476,6 +512,29 @@ footer .logo {
 .links a {
 	display: inline-block;
 	margin-right: 8px;
+	}
+
+.experience h3, p {
+	margin-bottom: 0;
+	line-height: 1.5;
+	}
+
+.experience h3 {
+	font-size: 20px;
+	}
+
+.experience p {
+	font-weight: 300;
+	}
+
+.experience .flex-container {
+	padding-top: 0;
+	padding-bottom: 0;
+	}
+
+.experience .flex-child {
+	display: initial;
+	margin-bottom: 24px;
 	}
 
 @media screen and (min-width: 641px) {
