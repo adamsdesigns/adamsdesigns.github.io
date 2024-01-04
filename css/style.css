@@ -527,12 +527,16 @@ footer .logo {
 	font-weight: 300;
 	}
 
+.experience img {
+	margin-bottom: 24px;
+	}
+
 .experience .flex-container {
 	padding-top: 0;
 	padding-bottom: 0;
 	}
 
-.experience .flex-child {
+.flex-child.experience {
 	display: initial;
 	margin-bottom: 24px;
 	}
