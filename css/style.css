@@ -539,6 +539,7 @@ footer .logo {
 .flex-child.experience {
 	display: initial;
 	margin-bottom: 24px;
+	background: initial;
 	}
 
 @media screen and (min-width: 641px) {
