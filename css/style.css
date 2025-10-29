@@ -23,6 +23,11 @@ img {
 	height: auto;
 	}
 
+video {
+	border-radius: 24px;
+	margin-bottom: 0 !important;
+	}
+
 /* Reset */
 
 div, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
@@ -64,6 +69,7 @@ p {
 	margin-bottom: 1.25em;
 	font-size: 1em;
 	line-height: 1.75;
+	opacity: 80%;
 	}
 	
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +102,12 @@ h3 {
 	font-weight: 500;
 	margin-bottom: 24px;
 	line-height: 36px;
+	}
+
+h4 {
+	font-size: 26px;
+	line-height: 130%;
+	font-weight: 400;
 	}
 
 .caption {
@@ -368,6 +380,7 @@ a[href*="#"] img:hover {
 	padding: 24px;
 	flex-direction: column;
 	display: flex;
+	gap: 24px;
 	}
 
 .flex-child {
@@ -378,10 +391,6 @@ a[href*="#"] img:hover {
 	display: flex;
 	}
 
-.flex-child:first-child {
-    margin-bottom: 24px;
-	} 
-
 .flex-child.contact {
 	background-color: #0B0E12;
 	color: #FFF;
@@ -389,7 +398,6 @@ a[href*="#"] img:hover {
 
 .flex-container.reverse .flex-child:nth-child(1) { 
 	order: 2; 
-	margin: 24px 0 0;
 	}
 
 .flex-container.reverse { 
@@ -588,7 +596,7 @@ footer .logo {
 	padding: 24px;
 	display: flex;
 	position: relative;
-	min-height: 720px;
+	/*min-height: 720px;*/
 	height: 100%;
 	flex-direction:row;
 	}
@@ -603,7 +611,6 @@ footer .logo {
 	}
 
 .flex-child:first-child {
-    margin-right: 24px;
     margin-bottom: 0;
 	} 
 
@@ -618,7 +625,6 @@ footer .logo {
 .flex-container.reverse .flex-child:nth-child(1) { 
 	order: initial; 
 	margin-top: 0;
-	margin-right: 24px;
 	}
 
 .minimal .contents {
@@ -788,6 +794,7 @@ video {
 	-webkit-box-shadow: none;
 	margin: 0 auto;
 	position: relative;
+	min-height: 536px;
 	}
 
 .rslides_tabs {
