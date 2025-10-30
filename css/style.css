@@ -695,7 +695,6 @@ footer .logo {
 video {
 	width: 100% !important;
 	object-fit: cover;
-	border: 1px solid #dadada;
 	margin-bottom: 100px;
 	}
 
