@@ -173,9 +173,9 @@ h4 {
 
 .link {
 	display: inline-block;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 18px;
-	color: #020202;
+	color: #44a6a0;
 	padding-right: 28px;
 	background: transparent url(../images/icon-diagonal-arrow-right-up.svg) no-repeat top right;  
 	}
