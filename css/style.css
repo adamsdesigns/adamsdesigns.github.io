@@ -438,7 +438,7 @@ a[href*="#"] img:hover {
 	}
 
 .contents h1 span {
-	color: #62BEB9;
+	color: #44a6a0;
 	display: block;
 	}
 
@@ -553,6 +553,7 @@ footer .logo {
 @media screen and (min-width: 641px) {
 .project-header p {
 	max-width: 75%;
+	font-size: 1.25em;
 	}
 	
 footer {
@@ -581,6 +582,10 @@ footer .logo {
 @media screen and (min-width: 1025px) {
 .row {
 	margin: 120px 0 152px;
+	}
+
+.row p:last-child {
+	margin-bottom: 0;
 	}
 
 .container {
@@ -667,12 +672,14 @@ footer .logo {
 	margin: 0 80px;
 	}
 
-.header-img {
-	height: 100%;
+.header h2 {
+	max-width: 952px;
+	margin-left: auto;
+	margin-right: auto;
 	}
 
-.row p:last-child {
-	margin-bottom: 0;
+.header-img {
+	height: 100%;
 	}
 }	
 
@@ -687,7 +694,7 @@ footer .logo {
 
 video {
 	width: 100% !important;
-	height: auto !important;
+	object-fit: cover;
 	border: 1px solid #dadada;
 	margin-bottom: 100px;
 	}
