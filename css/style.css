@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	margin-bottom: 0.75em;
 	font-weight: 500;
-	font-size: 64px;
+	font-size: 48px;
 	line-height: 1;
 	}
 
@@ -113,6 +113,10 @@ h4 {
     font-size: 1.125em;
 	}
 
+.caption.light {
+	color: #FFF;
+	}
+
 .overline {
 	font-size: 14px;
 	margin-bottom: 32px;
@@ -135,22 +139,13 @@ h4 {
 .project-intro h2 {
 	margin-bottom: 32px;
 	opacity: 0.5;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 500;
 	line-height: 1.3;
 	}
 
 .project-intro .experience p {
 	font-size: 18px;
-	}
-
-.project-intro .flex-container.minimal {
-	margin-bottom: 40px;
-	max-width: 1290px;
-	}
-
-.project-intro .flex-child.experience {
-	margin-bottom: 0;
 	}
 
 .project-intro img {
@@ -168,7 +163,6 @@ h4 {
 	position: relative;
 	font-weight: 500;
 	}
-
 
 .project-header p {
 	font-size: 1.125em;
@@ -421,6 +415,10 @@ a[href*="#"] img:hover {
 	display: flex;
 	}
 
+.flex-child.double {
+	flex: 2;
+	}
+
 .flex-child.contact {
 	background-color: #0B0E12;
 	color: #FFF;
@@ -580,6 +578,15 @@ footer .logo {
 	background: initial;
 	}
 
+.project-intro .flex-container.minimal {
+	margin-bottom: 40px;
+	max-width: 1290px;
+	}
+
+.project-intro .flex-child.experience {
+	margin-bottom: 0;
+	}
+
 @media screen and (min-width: 641px) {
 .project-header p {
 	max-width: 75%;
@@ -660,6 +667,10 @@ footer .logo {
 .flex-container.reverse .flex-child:nth-child(1) { 
 	order: initial; 
 	margin-top: 0;
+	}
+
+.flex-child img {
+	max-height: initial;
 	}
 
 .minimal .contents {
