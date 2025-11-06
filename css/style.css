@@ -721,6 +721,12 @@ footer .logo {
 	}
 }
 
+@media screen and (min-width: 1920px) {
+.project-intro .flex-container {
+	max-width: 75%;
+	}
+}
+
 
 /* Misc */
 
