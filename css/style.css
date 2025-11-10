@@ -792,7 +792,6 @@ video {
 	height: 100%;
 	border-radius: 16px;
 	color: #fff;
-	padding-bottom: 32px;
  	}
 
  .rslides li h3 {
@@ -851,7 +850,6 @@ video {
 
 .rslides .link {
 	display: inline-block;
-	color: #FFF;
 	font-size: 14px;
 	background: none;
 	margin-left: 24px;
@@ -921,6 +919,12 @@ video {
 	float: left;
 	}
 
+.rslides .project-details {
+	background-color: #5D97B1; 
+	padding: 4px 0 24px; 
+	color: #020202;
+	}
+
 @media screen and (min-width: 1025px) {
 .rslides .frame {
 	position: relative;
@@ -983,9 +987,7 @@ video {
 #heroslider-pager {
 	display: block;
 	}
- }
 
- @media screen and (min-width: 1025px) {
 .rslides_nav.prev {
 	right: 15%;
 	left: initial;
@@ -1002,5 +1004,11 @@ video {
  	display: none;
  	background: url(../images/left-arrow.png) no-repeat;
  	background-size: 30px;
+	}
+
+.rslides .project-details {
+	background-color: transparent; 
+	padding: 4px 0 24px; 
+	color: #FFF;
 	}
  }
